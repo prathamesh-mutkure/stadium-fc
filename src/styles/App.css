@@ -9,6 +9,7 @@
   border-radius: 5px;
   position: relative;
   box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+  overflow-y: auto;
 }
 
 .search-input input {
@@ -17,8 +18,8 @@
   outline: none;
   border: none;
   border-radius: 5px;
-  padding: 0 60px 0 20px;
   font-size: 18px;
+  padding: 0 20px 0 20px;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -40,20 +41,38 @@
   pointer-events: auto;
 }
 
-.autocom-box li {
+.autocom-box .search-item {
   list-style: none;
   padding: 8px 12px;
-  display: none;
   width: 100%;
   cursor: default;
   border-radius: 3px;
 }
 
-.search-input.active .autocom-box li {
+.search-input.active .autocom-box .search-item {
   display: block;
 }
-.autocom-box li:hover {
+
+.autocom-box .search-item:hover {
   background: #efefef;
+}
+
+.search-item p {
+  margin: 0;
+}
+
+.search-input .name {
+  font-weight: bold;
+}
+
+.search-input .name span {
+  font-weight: normal;
+}
+
+.search-input .club {
+  color: grey;
+  font-size: 0.7rem;
+  padding-top: 4px;
 }
 
 .search-input .icon {

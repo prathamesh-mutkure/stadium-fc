@@ -1,26 +1,37 @@
 import React, { useState } from "react";
+import PlayerSearchItem from "./PlayerSearchItem";
 import { getAllPlayers, searchPlayer } from "../data/datahelper";
 
 const SearchBar = () => {
   const [query, setQuery] = useState("");
+  const [searchResult, setSearchResult] = useState([]);
+
+  const handleQuery = (e) => {
+    const newQuery = e.target.value;
+    setQuery(newQuery);
+    setSearchResult(searchPlayer(newQuery.trim().toLowerCase()));
+  };
 
   return (
-    <div class="wrapper">
-      <div class="search-input">
+    <div className="wrapper">
+      <div className={"search-input " + (query && "active")}>
         <a href="" target="_blank" hidden></a>
+
         <input
           type="text"
-          placeholder="Type to search.."
+          placeholder="Search"
           name="query"
           value={query}
-          onChange={(q) => setQuery(q.target.value)}
+          onChange={handleQuery}
         />
-        <div class="autocom-box">
-          {searchPlayer(query).map((player) => {
-            return <i>{player.Name + " " + player.Club}</i>;
-          })}
+
+        <div className="autocom-box">
+          {searchResult.map((player, index) => (
+            <PlayerSearchItem key={index} player={player} />
+          ))}
         </div>
-        <div class="icon"></div>
+
+        {/* <div className="icon"></div> */}
       </div>
     </div>
   );
