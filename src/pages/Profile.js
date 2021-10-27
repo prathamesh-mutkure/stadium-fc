@@ -7,7 +7,7 @@ const Profile = ({ match }) => {
   const player = getPlayerByIndex(match.params.index);
 
   return (
-    <div>
+    <div className="container">
       <h1>{player.Name}</h1>
 
       <div style={{ height: "400px", width: "600px" }}>
