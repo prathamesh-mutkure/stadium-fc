@@ -2,6 +2,8 @@ import data from "./data.json";
 
 export const getAllPlayers = () => data;
 
+export const getPlayerByIndex = (index) => data[index];
+
 export const searchPlayer = (query = "") => {
   let searched_players = data.filter((player, index) => {
     return (

@@ -19,7 +19,7 @@ const SearchBar = () => {
 
         <input
           type="text"
-          placeholder="Search"
+          placeholder="Search Player"
           name="query"
           value={query}
           onChange={handleQuery}
@@ -27,7 +27,7 @@ const SearchBar = () => {
 
         <div className="autocom-box">
           {searchResult.map((player, index) => (
-            <PlayerSearchItem key={index} player={player} />
+            <PlayerSearchItem key={index} player={player} index={index} />
           ))}
         </div>
 
