@@ -1,0 +1,62 @@
+/*****************************************************************
+Header
+*****************************************************************/
+
+.header {
+  padding: 5% 0;
+}
+
+.header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  color: rgba(251, 102, 163, 1);
+}
+
+/*****************************************************************
+Chart
+*****************************************************************/
+
+.chart {
+  padding-right: 10%;
+}
+
+.border-right {
+  border-right: 1px solid rgba(251, 102, 163, 1);
+}
+
+/*****************************************************************
+Player Info
+*****************************************************************/
+
+.player-info {
+  padding-left: 10%;
+  color: gray;
+  font-family: "Raleway", sans-serif;
+}
+
+.player-info p {
+  display: inline;
+  padding: 16px 32px;
+  background-color: #197e52;
+  border-radius: 16px;
+  color: white;
+  margin: 10px 30px 10px 0;
+}
+
+.player-info p span {
+  font-weight: bold;
+}
+
+.player-info li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.player-info li span {
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.player-details {
+  margin-top: 10%;
+}

@@ -1,5 +1,7 @@
 import React from "react";
+import "../styles/index.css";
 import "../styles/App.css";
+import "../styles/Player.css";
 import { getPlayerByIndex } from "../data/datahelper";
 import RadarChart from "../components/RadarChart";
 import StarRating from "../components/StarRating";
@@ -15,7 +17,7 @@ const Profile = ({ match }) => {
       </Row>
 
       <Row>
-        <Col className="chart">
+        <Col className="chart border-right">
           <RadarChart player={player} />
         </Col>
 
