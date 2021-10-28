@@ -7,12 +7,27 @@ import RadarChart from "../components/RadarChart";
 import StarRating from "../components/StarRating";
 import { Row, Col, Container, Button } from "react-bootstrap";
 
-const Profile = ({ match }) => {
+const Profile = ({ match, history }) => {
   const player = getPlayerByIndex(match.params.index);
+
+  const goHomeTapped = () => {
+    history.goBack();
+    // history.push("/");
+  };
+
+  const helpTapped = () => {};
 
   return (
     <Container>
-      <Row className="text-center header">
+      <Row className="header">
+        <div className="position-absolute text-start">
+          <p className="me-5 d-inline" onClick={goHomeTapped}>
+            <i className="fas fa-arrow-left me-2"></i> Home
+          </p>
+          <p className="d-inline" onClick={helpTapped}>
+            <i className="fas fa-question me-2"></i>Help
+          </p>
+        </div>
         <h1>{player.Name}</h1>
       </Row>
 
