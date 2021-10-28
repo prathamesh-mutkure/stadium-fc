@@ -87,3 +87,50 @@
   color: #644bff;
   cursor: pointer;
 }
+
+/*****************************************************************
+Player
+*****************************************************************/
+
+.header {
+  padding: 5% 0;
+}
+
+.header h1 {
+  font-weight: lighter;
+}
+
+.chart {
+  padding-right: 10%;
+}
+
+.player-info {
+  padding-left: 10%;
+  color: gray;
+}
+
+.player-info p {
+  display: inline;
+  padding: 12px 18px;
+  background-color: #197e52;
+  border-radius: 10px;
+  color: white;
+  margin: 10px 30px 10px 0;
+}
+
+.player-info p span {
+  font-weight: bold;
+}
+
+.player-info li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.player-info li span {
+  font-weight: bold;
+}
+
+.player-details {
+  margin-top: 10%;
+}

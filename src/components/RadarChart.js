@@ -4,7 +4,6 @@ import { ChartOptions } from "chart.js";
 
 const RadarChart = ({ player }) => {
   const data = {
-    type: "radar",
     labels: [
       "Pace",
       "Dribbling",
@@ -23,6 +22,12 @@ const RadarChart = ({ player }) => {
           player["ShortPassing"],
           player["Volleys"],
         ],
+        backgroundColor: "rgba(251, 102, 163, 0.4)",
+        borderColor: "rgba(251, 102, 163, 1)",
+        pointBackgroundColor: "rgba(251, 102, 163, 0.8)",
+        pointBorderWidth: 0,
+        pointRadius: 9,
+        borderWidth: 3,
       },
     ],
   };
@@ -33,14 +38,32 @@ const RadarChart = ({ player }) => {
         beginAtZero: true,
         min: 0,
         max: 100,
-        stepSize: 20,
+        ticks: {
+          major: {
+            enabled: true,
+          },
+          font: {
+            size: 12,
+          },
+          color: "rgba(251, 102, 163, 1)",
+        },
+        pointLabels: {
+          font: {
+            size: 12,
+          },
+          color: "rgba(251, 102, 163, 1)",
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        display: false,
       },
     },
   };
 
   return (
     <div>
-      <h1>Radar</h1>
       <Radar data={data} options={options} />
     </div>
   );
