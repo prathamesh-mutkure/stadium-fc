@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PlayerSearchItem from "./PlayerSearchItem";
-import { getAllPlayers, searchPlayer } from "../data/datahelper";
+import { searchPlayer } from "../data/datahelper";
 
 const SearchBar = () => {
   const [query, setQuery] = useState("");
@@ -15,7 +15,7 @@ const SearchBar = () => {
   return (
     <div className="wrapper">
       <div className={"search-input " + (query && "active")}>
-        <a href="" target="_blank" hidden></a>
+        {/* <a href="" target="_blank" hidden></a> */}
 
         <input
           type="text"

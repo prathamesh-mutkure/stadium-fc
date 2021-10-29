@@ -5,7 +5,7 @@ import "../styles/Player.css";
 import { getPlayerByIndex } from "../data/datahelper";
 import RadarChart from "../components/RadarChart";
 import StarRating from "../components/StarRating";
-import { Row, Col, Container, Button } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 
 const Profile = ({ match, history }) => {
   const player = getPlayerByIndex(match.params.index);
@@ -19,7 +19,7 @@ const Profile = ({ match, history }) => {
 
   return (
     <Container>
-      <Row className="header">
+      <Row className="header position-relative">
         <div className="position-absolute text-start">
           <p className="me-5 d-inline" onClick={goHomeTapped}>
             <i className="fas fa-arrow-left me-2"></i> Home
