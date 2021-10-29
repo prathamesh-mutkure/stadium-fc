@@ -2,6 +2,10 @@
   background-color: #83e991;
 }
 
+.home img {
+  max-width: 100%;
+}
+
 .wrapper {
   max-width: 450px;
   margin: 150px auto;

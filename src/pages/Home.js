@@ -6,20 +6,17 @@ import { Row, Col, Image } from "react-bootstrap";
 
 const Home = () => {
   return (
-    <div className=" home">
+    <div className="home d-flex align-items-center">
       <div className="container">
-        <Row>
-          <Col>
-            <Image src="./assets/images/football-bg.png" />
+        <Row xs={1} lg={2}>
+          <Col xs={{ order: "last" }} lg={{ order: "first" }}>
+            <img src="./assets/images/football-bg.png" />
           </Col>
-          <Col>
+          <Col xs={{ order: "first" }} lg={{ order: "last" }}>
+            <h1 className="text-center">FIFA 2021</h1>
             <SearchBar />
           </Col>
         </Row>
-
-        {/* <h1>Home</h1>
-
-        <SearchBar /> */}
       </div>
     </div>
   );
