@@ -62,7 +62,7 @@ const RadarChart = ({ player }) => {
   };
 
   return (
-    <div>
+    <div className="p-2 p-lg-0">
       <Radar data={data} options={options} />
     </div>
   );

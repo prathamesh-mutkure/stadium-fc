@@ -12,15 +12,14 @@ const Profile = ({ match, history }) => {
 
   const goHomeTapped = () => {
     history.goBack();
-    // history.push("/");
   };
 
   const helpTapped = () => {};
 
   return (
-    <Container>
+    <Container className="text-center text-lg-start mb-5">
       <Row className="header position-relative">
-        <div className="position-absolute text-start">
+        <div className="position-absolute text-center text-lg-start">
           <p className="me-5 d-inline" onClick={goHomeTapped}>
             <i className="fas fa-arrow-left me-2"></i> Home
           </p>
@@ -28,15 +27,23 @@ const Profile = ({ match, history }) => {
             <i className="fas fa-question me-2"></i>Help
           </p>
         </div>
-        <h1>{player.Name}</h1>
+        <h1 className="p-5">{player.Name}</h1>
       </Row>
 
-      <Row>
-        <Col className="chart border-right">
+      <Row xs={1} lg={2}>
+        <Col
+          xs={{ order: "last" }}
+          lg={{ order: "first" }}
+          className="chart border-right my-sm-5"
+        >
           <RadarChart player={player} />
         </Col>
 
-        <Col className="player-info">
+        <Col
+          xs={{ order: "first" }}
+          lg={{ order: "last" }}
+          className="player-info  my-sm-5"
+        >
           <Row>
             <div className="m-0 p-0">
               <p>

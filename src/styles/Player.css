@@ -22,8 +22,10 @@ Chart
   padding-right: 10%;
 }
 
-.border-right {
-  border-right: 1px solid rgba(251, 102, 163, 1);
+@media only screen and (min-width: 992px) {
+  .border-right {
+    border-right: 1px solid rgba(251, 102, 163, 1);
+  }
 }
 
 /*****************************************************************
