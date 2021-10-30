@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Home.css";
-import SearchBar from "../components/SearchBar";
+import SearchBar from "../components/home/SearchBar";
 import { Row, Col, Container } from "react-bootstrap";
 
 const Home = () => {

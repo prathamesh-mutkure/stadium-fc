@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/Profile.css";
 import { getPlayerByIndex } from "../data/datahelper";
-import RadarChart from "../components/RadarChart";
-import StarRating from "../components/StarRating";
+import RadarChart from "../components/profile/RadarChart";
+import StarRating from "../components/profile/StarRating";
 import { Row, Col, Container } from "react-bootstrap";
 
 const Profile = ({ match, history }) => {

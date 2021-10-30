@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PlayerSearchItem from "./PlayerSearchItem";
-import { searchPlayer } from "../data/datahelper";
+import { searchPlayer } from "../../data/datahelper";
 
 const SearchBar = () => {
   const [query, setQuery] = useState("");
