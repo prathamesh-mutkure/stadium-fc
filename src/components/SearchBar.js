@@ -13,26 +13,22 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="wrapper">
-      <div className={"search-input " + (query && "active")}>
-        {/* <a href="" target="_blank" hidden></a> */}
+    <div className={"search-input " + (query && "active")}>
+      <input
+        type="text"
+        placeholder="Search Player"
+        name="query"
+        value={query}
+        onChange={handleQuery}
+      />
 
-        <input
-          type="text"
-          placeholder="Search Player"
-          name="query"
-          value={query}
-          onChange={handleQuery}
-        />
-
-        <div className="autocom-box">
-          {searchResult.map((player, index) => (
-            <PlayerSearchItem key={index} player={player} index={index} />
-          ))}
-        </div>
-
-        {/* <div className="icon"></div> */}
+      <div className="autocom-box">
+        {searchResult.map((player, index) => (
+          <PlayerSearchItem key={index} player={player} index={index} />
+        ))}
       </div>
+
+      {/* <div className="icon"></div> */}
     </div>
   );
 };

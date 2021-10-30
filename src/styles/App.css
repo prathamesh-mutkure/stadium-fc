@@ -4,11 +4,13 @@
 
 .home img {
   max-width: 100%;
+  animation: fadeInLeft 1s;
 }
 
 .wrapper {
   max-width: 450px;
   margin: 150px auto;
+  animation: fadeInRight 1s;
 }
 
 .wrapper .search-input {

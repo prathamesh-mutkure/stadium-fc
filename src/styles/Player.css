@@ -36,6 +36,8 @@ Player Info
   padding-left: 10%;
   color: gray;
   font-family: "Raleway", sans-serif;
+
+  animation: fadeIn 2s;
 }
 
 .player-info p {
