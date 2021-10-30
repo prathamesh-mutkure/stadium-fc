@@ -1,12 +1,12 @@
 import React from "react";
 import "../styles/Home.css";
 import SearchBar from "../components/SearchBar";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 
 const Home = () => {
   return (
     <div className="home d-flex align-items-center">
-      <div className="container">
+      <Container>
         <Row xs={1} lg={2}>
           <Col xs={{ order: "last" }} lg={{ order: "first" }}>
             <img src="./assets/images/football-bg.png" alt="football" />
@@ -20,7 +20,7 @@ const Home = () => {
             <SearchBar />
           </Col>
         </Row>
-      </div>
+      </Container>
     </div>
   );
 };

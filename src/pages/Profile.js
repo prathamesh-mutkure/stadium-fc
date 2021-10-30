@@ -16,45 +16,44 @@ const Profile = ({ match, history }) => {
 
   return (
     <div className="profile">
-      <Container className="text-center text-lg-start mb-5">
-        <Row className="header position-relative">
-          <div className="position-absolute text-center text-lg-start">
-            <p className="me-5 d-inline" onClick={goHomeTapped}>
+      <Container className="text-center text-lg-start">
+        <Row className="header">
+          <div className="position-absolute">
+            <p className="me-5" onClick={goHomeTapped}>
               <i className="fas fa-arrow-left me-2"></i> Home
             </p>
-            <p className="d-inline" onClick={helpTapped}>
-              <i className="fas fa-question me-2"></i>Help
+            <p onClick={helpTapped}>
+              <i className="fas fa-question me-2"></i> Help
             </p>
           </div>
-          <h1 className="p-5">{player.Name}</h1>
+
+          <h1 className="p-3">{player.Name}</h1>
         </Row>
 
         <Row xs={1} lg={2}>
           <Col
             xs={{ order: "last" }}
             lg={{ order: "first" }}
-            className="chart border-right my-sm-5"
+            className="chart d-flex"
           >
-            <RadarChart player={player} />
+            <RadarChart player={player} className="my-auto" />
           </Col>
 
           <Col
             xs={{ order: "first" }}
             lg={{ order: "last" }}
-            className="player-info  my-sm-5"
+            className="player-info"
           >
-            <Row>
-              <div className="m-0 p-0">
-                <p>
-                  Overall <span>{player["Overall"]}</span>
-                </p>
-                <p>
-                  Overall <span>{player["Overall"] + 4}</span>
-                </p>
-              </div>
-            </Row>
+            <div>
+              <p>
+                Overall <span>{player["Overall"]}</span>
+              </p>
+              <p>
+                Overall <span>{player["Overall"] + 4}</span>
+              </p>
+            </div>
 
-            <Row className="player-details">
+            <div className="player-details">
               <li>
                 Age <span>{player["Age"]}</span>
               </li>
@@ -85,7 +84,7 @@ const Profile = ({ match, history }) => {
               <li>
                 International Reputation <StarRating count={5} />
               </li>
-            </Row>
+            </div>
           </Col>
         </Row>
       </Container>

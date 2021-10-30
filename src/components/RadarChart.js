@@ -1,7 +1,7 @@
 import React from "react";
 import { Radar } from "react-chartjs-2";
 
-const RadarChart = ({ player }) => {
+const RadarChart = ({ player, className = "" }) => {
   const data = {
     labels: [
       "Pace",
@@ -61,11 +61,7 @@ const RadarChart = ({ player }) => {
     },
   };
 
-  return (
-    <div className="p-2 p-lg-0">
-      <Radar data={data} options={options} />
-    </div>
-  );
+  return <Radar data={data} options={options} className={className} />;
 };
 
 export default RadarChart;

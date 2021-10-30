@@ -3,9 +3,13 @@ Header
 *****************************************************************/
 
 .header {
-  padding: 5% 0;
+  /* padding: 5% 0; */
   color: #797979;
   position: relative;
+}
+
+.header p {
+  display: inline;
 }
 
 .header h1 {
@@ -20,17 +24,14 @@ Chart
 *****************************************************************/
 
 .chart {
-  padding-right: 10%;
+  margin-bottom: 10%;
 }
 
-/* .border-right {
-  border-top: 1px solid rgba(251, 102, 163, 1);
-} */
-
 @media only screen and (min-width: 992px) {
-  .border-right {
-    border-top: none;
+  .chart {
     border-right: 1px solid rgba(251, 102, 163, 1);
+    padding-right: 10%;
+    padding-left: 0;
   }
 }
 
@@ -39,11 +40,10 @@ Player Info
 *****************************************************************/
 
 .player-info {
-  padding-left: 10%;
   color: gray;
   font-family: "Raleway", sans-serif;
-
   animation: fadeIn 2s;
+  margin-bottom: 10%;
 }
 
 .player-info p {
@@ -71,4 +71,11 @@ Player Info
 
 .player-details {
   margin-top: 10%;
+}
+
+@media only screen and (min-width: 992px) {
+  .player-info {
+    padding-left: 10%;
+    padding-right: 0;
+  }
 }
