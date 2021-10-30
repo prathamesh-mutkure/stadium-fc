@@ -27,7 +27,7 @@ const Profile = ({ match, history }) => {
             </p>
           </div>
 
-          <h1 className="p-3">{player.Name}</h1>
+          <h1 className="">{player.Name}</h1>
         </Row>
 
         <Row xs={1} lg={2}>
