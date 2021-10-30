@@ -1,3 +1,7 @@
+/*****************************************************************
+Home
+*****************************************************************/
+
 .home {
   background-color: #83e991;
 }
@@ -13,7 +17,11 @@
   animation: fadeInRight 1s;
 }
 
-.wrapper .search-input {
+/*****************************************************************
+Search Input
+*****************************************************************/
+
+.search-input {
   background: #fff;
   width: 100%;
   border-radius: 5px;
@@ -36,6 +44,10 @@
 .search-input.active input {
   border-radius: 5px 5px 0 0;
 }
+
+/*****************************************************************
+Autocomplete Box
+*****************************************************************/
 
 .search-input .autocom-box {
   padding: 0;
@@ -71,21 +83,21 @@
   margin: 0;
 }
 
-.search-input .name {
+.search-item .name {
   font-weight: bold;
 }
 
-.search-input .name span {
+.search-item .name span {
   font-weight: normal;
 }
 
-.search-input .club {
+.search-item .club {
   color: grey;
   font-size: 0.7rem;
   padding-top: 4px;
 }
 
-.search-input .icon {
+.search-item .icon {
   position: absolute;
   right: 0px;
   top: 0px;

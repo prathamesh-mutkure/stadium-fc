@@ -1,6 +1,5 @@
 import React from "react";
-import "../styles/index.css";
-import "../styles/App.css";
+import "../styles/Home.css";
 import SearchBar from "../components/SearchBar";
 import { Row, Col } from "react-bootstrap";
 

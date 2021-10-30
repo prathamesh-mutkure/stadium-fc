@@ -5,6 +5,7 @@ Header
 .header {
   padding: 5% 0;
   color: #797979;
+  position: relative;
 }
 
 .header h1 {
@@ -22,8 +23,13 @@ Chart
   padding-right: 10%;
 }
 
+/* .border-right {
+  border-top: 1px solid rgba(251, 102, 163, 1);
+} */
+
 @media only screen and (min-width: 992px) {
   .border-right {
+    border-top: none;
     border-right: 1px solid rgba(251, 102, 163, 1);
   }
 }
