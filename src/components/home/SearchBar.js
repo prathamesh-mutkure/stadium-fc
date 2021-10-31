@@ -16,7 +16,7 @@ const SearchBar = () => {
     <div className={"search-input " + (query && "active")}>
       <input
         type="text"
-        placeholder="Search Player"
+        placeholder="Search player name, country, club or age"
         name="query"
         value={query}
         onChange={handleQuery}

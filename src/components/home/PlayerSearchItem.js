@@ -12,7 +12,9 @@ const PlayerSearchItem = ({ player, history }) => {
       <p className="name">
         {player.Name}, <span>{player.Nationality}</span>
       </p>
-      <p className="club">{player.Club}</p>
+      <p className="club">
+        {player.Club} (age {player.Age}){" "}
+      </p>
     </div>
   );
 };
