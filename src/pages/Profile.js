@@ -27,7 +27,15 @@ const Profile = ({ match, history }) => {
             </p>
           </div>
 
-          <h1 className="">{player.Name}</h1>
+          <div className="player-name d-flex justify-content-center">
+            <h1>{player.Name}</h1>
+
+            <img
+              src={"../assets/images/players/player-" + player.id + ".png"}
+              alt="Player"
+              loading="lazy"
+            />
+          </div>
         </Row>
 
         <Row xs={1} lg={2}>
