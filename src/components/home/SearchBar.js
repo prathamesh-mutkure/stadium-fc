@@ -23,8 +23,8 @@ const SearchBar = () => {
       />
 
       <div className="autocom-box">
-        {searchResult.map((player, index) => (
-          <PlayerSearchItem key={index} player={player} index={index} />
+        {searchResult.map((player) => (
+          <PlayerSearchItem key={player.id} player={player} />
         ))}
       </div>
 

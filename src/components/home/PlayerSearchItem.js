@@ -1,12 +1,12 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 
-const PlayerSearchItem = ({ player, index, history }) => {
+const PlayerSearchItem = ({ player, history }) => {
   return (
     <div
       className="search-item"
       onClick={() => {
-        history.push("/player/" + index);
+        history.push("/player/" + player.id);
       }}
     >
       <p className="name">
