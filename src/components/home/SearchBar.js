@@ -20,6 +20,7 @@ const SearchBar = () => {
         name="query"
         value={query}
         onChange={handleQuery}
+        autoComplete="off"
       />
 
       <div className="autocom-box">

@@ -17,6 +17,19 @@ Home
   animation: fadeInRight 1s;
 }
 
+.wrapper h1 {
+  font-family: "Titan One", cursive;
+  font-size: 3.5rem;
+  margin-bottom: 20%;
+  /* color: #9c3852; */
+  /* color: #2f86a6; */
+  color: #00455f;
+}
+
+.wrapper h1 span {
+  color: #fbff00;
+}
+
 /*****************************************************************
 Search Input
 *****************************************************************/

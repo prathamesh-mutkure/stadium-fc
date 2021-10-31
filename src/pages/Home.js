@@ -16,7 +16,9 @@ const Home = () => {
             lg={{ order: "last" }}
             className="wrapper my-auto"
           >
-            <h1 className="text-center mb-5">FIFA 2021</h1>
+            <h1 className="text-center">
+              FIFA<span>21</span>
+            </h1>
             <SearchBar />
           </Col>
         </Row>
