@@ -4,8 +4,12 @@ import SearchBar from "../components/home/SearchBar";
 import { Row, Col, Container } from "react-bootstrap";
 
 const Home = () => {
+  const homeStyle = {
+    backgroundImage: window.location.origin + "/assets/images/home-bg.png",
+  };
+
   return (
-    <div className="home d-flex align-items-center">
+    <div className="home d-flex align-items-center" style={homeStyle}>
       <Container>
         <Row xs={1} lg={2}>
           <Col xs={{ order: "last" }} lg={{ order: "first" }}>
