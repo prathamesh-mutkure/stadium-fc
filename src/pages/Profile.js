@@ -4,9 +4,14 @@ import { getPlayerByIndex } from "../data/datahelper";
 import RadarChart from "../components/profile/RadarChart";
 import StarRating from "../components/profile/StarRating";
 import { Row, Col, Container } from "react-bootstrap";
+import NotFount from "./NotFound";
 
 const Profile = ({ match, history }) => {
   const player = getPlayerByIndex(match.params.index);
+
+  if (!player) {
+    return <NotFount message="Invalid Player ID" />;
+  }
 
   const goHomeTapped = () => {
     history.goBack();
